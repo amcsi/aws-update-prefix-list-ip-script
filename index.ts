@@ -6,7 +6,7 @@ import {
 } from '@aws-sdk/client-ec2';
 
 const currentIp = await getMyIp();
-console.log("Hello via Bun!", currentIp, process.env.AWS_ACCESS_KEY_ID);
+console.log(currentIp, process.env.AWS_ACCESS_KEY_ID);
 
 //TBC need seprate creds that don't need MFA
 
